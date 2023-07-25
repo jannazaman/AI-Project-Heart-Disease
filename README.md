@@ -6,6 +6,6 @@
 2. Model Advantages: SVMs excel in handling high-dimensional and non-linearly separable data through kernel functions, offering insights into the decision-making process. On the other hand, MLPs provide greater flexibility, mastering complex mappings. Careful hyperparameter selection is essential to avoid overfitting in MLP, while the symmetric "tanh" activation function aids in better data pattern understanding.
    
 ## Experience
-Optimized Experience: Hands-on expertise with MLP neural networks and SVM models. Explored activation functions, learning rates, and optimizers for MLPs, and different kernel functions for SVMs. Strengthened capabilities in handling non-linear relationships, intricate data patterns, and classification tasks with powerful machine learning algorithms.
+Optimized Experience: Hands-on expertise with MLP neural networks and SVM models. Explored activation functions (relu, tanh), learning rates (0.01, 0.001), and optimizers for MLPs (SGD, Adam), and different kernel functions for SVMs (linear, rbf, sigmoid). Strengthened capabilities in handling non-linear relationships, intricate data patterns, and classification tasks with powerful machine learning algorithms.
 
 You can download the dataset (processed.cleveland.data) from the UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/Heart+Disease
