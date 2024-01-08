@@ -23,7 +23,7 @@
 * import random &#8594; for generating random numbers
 * import pandas &#8594; for data manipulation and analysis
 * import numpy &#8594; for numerical operations
-* scikit-learn &#8594; popular machine learning library that provides simple and efficient tools for data analysis and modeling
+* scikit-learn &#8594; popular machine learning library that provides simple and efficient tools for data analysis, modeling, splitting
 
 ## Key Results 
 ### Superior Performance of MLP with "tanh" Activation: 
