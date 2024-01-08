@@ -1,11 +1,4 @@
 # AI-Project-Heart-Disease
-
-## Key Features
-### Superior Performance of MLP with "tanh" Activation: 
-Based on experiment outcomes, the MLP model with the "tanh" activation function outperformed both linear and non-linear SVM models, achieving the highest accuracy of 0.885. This indicates that the MLP model is a better fit for this dataset and its ability to simulate non-linear correlations contributes to capturing complex data patterns effectively.
-   
-### Model Advantages: 
-SVMs excel in handling high-dimensional and non-linearly separable data through kernel functions, offering insights into the decision-making process. On the other hand, MLPs provide greater flexibility, mastering complex mappings. Careful hyperparameter selection is essential to avoid overfitting in MLP, while the symmetric "tanh" activation function aids in better data pattern understanding.
    
 ## What I Will Be Using
 ### MLP:
@@ -25,6 +18,19 @@ SVMs excel in handling high-dimensional and non-linearly separable data through 
   1. Linear Kernel: A simple kernel that creates linear decision boundaries, works well for linearly separable data.
   2. RBF (Radial Basis Function) Kernel: A versatile kernel that can handle non-linear decision boundaries, suitable for a wide range of data distributions.
   3. Sigmoid Kernel: Non-linear kernel function that is particularly useful for binary classification tasks.
+
+## What To Import
+* import random &#8594; for generating random numbers
+* import pandas &#8594; for data manipulation and analysis
+* import numpy &#8594; for numerical operations
+* scikit-learn &#8594; popular machine learning library that provides simple and efficient tools for data analysis and modeling
+
+## Key Results 
+### Superior Performance of MLP with "tanh" Activation: 
+Based on experiment outcomes, the MLP model with the "tanh" activation function outperformed both linear and non-linear SVM models, achieving the highest accuracy of 0.885. This indicates that the MLP model is a better fit for this dataset and its ability to simulate non-linear correlations contributes to capturing complex data patterns effectively.
+   
+### Model Advantages: 
+SVMs excel in handling high-dimensional and non-linearly separable data through kernel functions, offering insights into the decision-making process. On the other hand, MLPs provide greater flexibility, mastering complex mappings. Careful hyperparameter selection is essential to avoid overfitting in MLP, while the symmetric "tanh" activation function aids in better data pattern understanding.
 
 ## Download Dataset
 You can download the dataset (processed.cleveland.data) from the UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/Heart+Disease
