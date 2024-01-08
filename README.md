@@ -2,7 +2,7 @@
 
 ## Features
 Below are the details and descriptions of the data features.
-13 Features and 1 Target
+- 13 Features and 1 Target
 
 ## Features
 
