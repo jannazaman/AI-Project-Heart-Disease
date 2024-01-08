@@ -1,5 +1,26 @@
 # AI-Project-Heart-Disease
-   
+
+## Features
+Below are the details and descriptions of the data features.
+## Features
+
+| Variable Name   | Type         | Description                                       |
+|-----------|--------------|---------------------------------------------------------|
+| Age       | Integer      | Age of the individual                                   |
+| Sex       | Categorical  | Gender of the individual                                |      
+| CP        | Categorical  | Chest pain type                                         | 
+| Trestbps  | Integer      | Resting blood pressure (on admission to the hospital)   |
+| Chol      | Integer      | Serum cholesterol                                       |
+| Fbs       | Categorical  | Fasting blood sugar > 120 mg/dL                         | 
+| Restecg   | Categorical  | Resting electrocardiographic results                    | 
+| Thalach   | Integer      | Maximum heart rate achieved                             | 
+| Exang     | Categorical  | Exercise-induced angina                                 | 
+| Oldpeak   | Integer      | ST depression induced by exercise relative to rest      |    
+| Slope     | Categorical  | Slope of the peak exercise ST segment                   |
+| Ca        |Integer       | Number of major vessels (0-3) colored by fluoroscopy    |
+| Thal      | Categorical  | Thalassemia                                             |
+| Num       | Integer      | Diagnosis of heart disease  (TARGET)                    |
+
 ## What I Will Be Using
 ### MLP:
 - Activation Functions -
