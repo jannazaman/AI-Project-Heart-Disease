@@ -39,8 +39,9 @@ Below are the details and descriptions of the data features.
    ```bash
    pip install -r requirements.txt
    ```
-3. 
-
+3. Run the Project:
+   - PyCharm &rarr; Click the green "Run" button
+   - Visual Studio Code &rarr; ``` bash python -m flask run ```
 
 ## Model Application 
 ### Home Page
@@ -48,7 +49,7 @@ Below are the details and descriptions of the data features.
 ### MLP Details Page
 ![mlp](images/MLP_page.png)
 ### SVM Details Page
-![svm](images/MLP_page.png)
+![svm](images/SVM_page.png)
 ### Heart Disease Prediction Page
 ![formpage](images/Form_Page.png)
 
