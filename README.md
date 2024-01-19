@@ -7,8 +7,6 @@ This project aims to predict heart disease using machine learning algorithms, sp
 Below are the details and descriptions of the data features.
 - 13 Features and 1 Target
 
-## Features
-
 | Variable Name   | Type         | Description                                       |
 |-----------|--------------|---------------------------------------------------------|
 | Age       | Integer      | Age of the individual                                   |
@@ -50,6 +48,10 @@ Below are the details and descriptions of the data features.
 * import pandas &#8594; for data manipulation and analysis
 * import numpy &#8594; for numerical operations
 * scikit-learn &#8594; popular machine learning library that provides simple and efficient tools for data analysis, modeling, splitting
+
+## Model Application 
+
+
 
 ## Results 
 ### Superior Performance of MLP with "tanh" Activation: 
