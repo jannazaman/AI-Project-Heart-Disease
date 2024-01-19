@@ -24,33 +24,33 @@ Below are the details and descriptions of the data features.
 | Thal      | Categorical  | Thalassemia                                             |
 | Num       | Integer      | Diagnosis of heart disease  (TARGET)                    |
 
-## Model Selection Insights
-### MLP:
-- Activation Functions -
-  1. ReLU (Rectified Linear Unit): Non-linear activation function, outputting input for positive values, zero otherwise.
-  2. Tanh (Hyperbolic Tangent): Outputs values in the range [-1, 1], capturing non-linear relationships.
- 
-- Optimizers -
-  1. Stochastic Gradient Descent (SGD): Iterative algorithm to minimize the model's error by adjusting parameters. Effective for large datasets.
-  2. Adam Optimizer: Adaptive learning rate algorithm for training neural networks, effective in handling noisy data.
-     
-- Learning Rates-
-  1. [0.01, 0.001]: How big the steps are when the model learns. Higher learning rates can speed up training but might cause the model to surpass the optimal values. Lower rates ensures stability but may slow down training.
-
-### SVM:
-- Kernels -
-  1. Linear Kernel: A simple kernel that creates linear decision boundaries, works well for linearly separable data.
-  2. RBF (Radial Basis Function) Kernel: A versatile kernel that can handle non-linear decision boundaries, suitable for a wide range of data distributions.
-  3. Sigmoid Kernel: Non-linear kernel function that is particularly useful for binary classification tasks.
-
-## What To Import
+## What I Imported to Train/Test the Models
 * import random &#8594; for generating random numbers
 * import pandas &#8594; for data manipulation and analysis
 * import numpy &#8594; for numerical operations
 * scikit-learn &#8594; popular machine learning library that provides simple and efficient tools for data analysis, modeling, splitting
 
-## Model Application 
+## How to Import and Use
+1. Clone the Repository:
+   ```bash
+   git clone https://github.com/jannazaman/AI-Project-Heart-Disease.git
+   ```
+2. Install Requirements:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. 
 
+
+## Model Application 
+### Home Page
+![homepage](images/HomePage.png)
+### MLP Details Page
+![mlp](images/MLP_page.png)
+### SVM Details Page
+![svm](images/MLP_page.png)
+### Heart Disease Prediction Page
+![formpage](images/Form_Page.png)
 
 
 ## Results 
