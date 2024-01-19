@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVM Model</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e2f3ff;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            text-align: center;
+        }
+
+        header {
+            background-color: #6CAEED;
+            padding: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+        main {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        section {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        h1 {
+            color: #000;
+        }
+
+        h2 {
+            text-align: initial;
+            color: rgb(26, 55, 105);
+        }
+
+        h3 {
+            text-align: initial;
+            color: rgb(46, 84, 152);
+        }
+
+        p {
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        ul {
+        list-style-type: none;
+        text-align: initial;
+        }
+
+        .procons {
+            list-style-type: circle;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 95%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #302658;
+            padding: 8px;
+            text-align: left;
+        }
+
+        li {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SVM Model</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>SVM Selection Insights</h2>
+            <h3>Kernels</h3>
+            <ul>
+                <li><strong>Linear Kernel:</strong> A simple kernel that creates linear decision boundaries, works well for linearly separable data.</li>
+                <li><strong>Tanh (Hyperbolic Tangent):</strong> Outputs values in the range [-1, 1], capturing non-linear relationships.</li>
+                <li><strong>Linear Kernel:</strong> A simple kernel that creates linear decision boundaries, works well for linearly separable data.</li>
+
+            </ul>
+        </section>
+
+        <section>
+            <h2>Model Advantages</h2>
+            <ul class="procons">
+                <li>SVM can efficiently handle non-linear decision boundaries using different kernel functions.</li>
+                <li>SVM is less prone to overfitting, especially in high-dimensional spaces.</li>
+
+            </ul>
+
+            <h2>Model Disdvantages</h2>
+            <ul class="procons">
+                <li>Training an SVM model can be computationally intensive, especially for large datasets.</li>
+                <li>SVMs can be sensitive to noise in the training data, especially when there is a high degree of overlapping between classes.</li>
+            </ul>
+
+            <h2>SVM Source File</h2>
+            <p>The source file encapsulates the comprehensive journey of this project, covering every stage from data loading to model evaluation. It documents the complete process, providing insights into the steps taken to analyze and predict heart disease.</p>
+            <p>View the source file: <a href="/templates/SVM.html" target="_blank"><strong>HERE</strong></a></p>
+
+        </section>
+
+        <section>
+            <h2>Model Results</h2>
+            <table>
+                <tr>
+                    <th>Kernel</th>
+                    <th>Cost</th>
+                    <th>Accuracy</th>
+                </tr>
+                <tr>
+                    <td>Linear</td>
+                    <td>0.5</td>
+                    <td>0.869</td>
+                </tr>
+                <tr>
+                    <td>RBF</td>
+                    <td>0.5</td>
+                    <td>0.836</td>
+                </tr>
+                <tr>
+                    <td>Sigmoid</td>
+                    <td>0.5</td>
+                    <td>0.852</td>
+                </tr>
+
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="/">Back to Home</a>
+    </footer>
+</body>
+</html>

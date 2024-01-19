@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLP Model</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e2f3ff;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            text-align: center;
+        }
+
+        header {
+            background-color: #6CAEED;
+            padding: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+        main {
+            max-width: 1300px; /* Limiting the maximum width of the content */
+            margin: 0 auto; /* Centering the content */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        section {
+            width: 50%;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        h1 {
+            color: #000;
+        }
+
+        h2 {
+            text-align: initial;
+            color: rgb(26, 55, 105);
+        }
+
+        h3 {
+            text-align: initial;
+            color: rgb(46, 84, 152);
+        }
+
+        p {
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        ul {
+        list-style-type: none;
+        text-align: initial;
+        }
+
+        .procon {
+            list-style-type: circle;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 85%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #302658;
+            padding: 8px;
+            text-align: left;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MLP Model</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>MLP Selection Insights</h2>
+            <h3>Activation Functions</h3>
+            <ul>
+                <li><strong>ReLU (Rectified Linear Unit):</strong> Non-linear activation function, outputting input for positive values, zero otherwise.</li>
+                <li><strong>Tanh (Hyperbolic Tangent):</strong> Outputs values in the range [-1, 1], capturing non-linear relationships.</li>
+            </ul>
+
+            <h3>Optimizers</h3>
+            <ul>
+                <li><strong>Stochastic Gradient Descent (SGD):</strong> Iterative algorithm to minimize the model's error by adjusting parameters. Effective for large datasets.</li>
+                <li><strong>Adam Optimizer:</strong> Adaptive learning rate algorithm for training neural networks, effective in handling noisy data.</li>
+            </ul>
+
+            <h3>Learning Rates</h3>
+            <ul>
+                <li><strong>[0.01, 0.001]:</strong> How big the steps are when the model learns. Higher learning rates can speed up training but might cause the model to surpass the optimal values. Lower rates ensure stability but may slow down training.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Model Advantages</h2>
+            <ul class="procon">
+                <li>Makes quick predictions after training.</li>
+                <li>Works well with both small and large input data.</li>
+                <li>Provides greater flexibility, mastering complex nonlinear problems.</li>
+            </ul>
+
+            <h2>Model Disdvantages</h2>
+            <ul class="procon">
+                <li>Training time can be longer compared to simpler models.</li>
+                <li>Susceptible to overfitting, especially with complex architectures.</li>
+            </ul>
+
+            <h2>MLP Source File</h2>
+            <p>The source file for this project contains a comprehensive overview of the entire process, from loading the dataset to evaluating the performance of the machine learning models.</p>
+            <p>View the source file: <a href="/templates/MLP.html" target="_blank"><strong>HERE</strong></a></p>
+
+        </section>
+
+        <section>
+            <h2>Model Results</h2>
+            <table>
+                <tr>
+                    <th>Activation Function</th>
+                    <th>Optimizer</th>
+                    <th>Learning Rate</th>
+                    <th>Accuracy</th>
+                </tr>
+                <tr>
+                    <td>ReLu</td>
+                    <td>SGD</td>
+                    <td>0.01</td>
+                    <td>0.803</td>
+                </tr>
+                <tr>
+                    <td>ReLu</td>
+                    <td>SGD</td>
+                    <td>0.001</td>
+                    <td>0.820</td>
+                </tr>
+                <tr>
+                    <td>ReLu</td>
+                    <td>Adam</td>
+                    <td>0.01</td>
+                    <td>0.738</td>
+                </tr>
+                <tr>
+                    <td>ReLu</td>
+                    <td>Adam</td>
+                    <td>0.001</td>
+                    <td>0.820</td>
+                </tr>
+                <tr>
+                    <td>Tanh</td>
+                    <td>SGD</td>
+                    <td>0.01</td>
+                    <td>0.885</td>
+                </tr>
+                <tr>
+                    <td>Tanh</td>
+                    <td>SGD</td>
+                    <td>0.001</td>
+                    <td>0.836</td>
+                </tr>
+                <tr>
+                    <td>Tanh</td>
+                    <td>Adam</td>
+                    <td>0.01</td>
+                    <td>0.885</td>
+                </tr>
+                <tr>
+                    <td>Tanh</td>
+                    <td>Adam</td>
+                    <td>0.001</td>
+                    <td>0.885</td>
+                </tr>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="/">Back to Home</a>
+    </footer>
+</body>
+</html>

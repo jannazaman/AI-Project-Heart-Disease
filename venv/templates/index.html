@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e2f3ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6CAEED;
+            padding: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #BDE0FE;
+            padding: 10px;
+        }
+
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 15px;
+            font-size: 24px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+
+        h2 {
+            color: #1f337e;
+        }
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            display: block;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        li:not(:last-child)::after {
+            content: " ↓";
+            color: #000;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2f34bd;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .main-one {
+            max-width: 1000px;
+
+        }
+
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+
+        }
+
+        th, td {
+            border: 1px solid #384d66;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #85bcf1;
+            color: rgb(21, 17, 33);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Heart Disease Prediction</h1>
+    </header>
+
+    <nav>
+        <a href="/mlp_model">MLP Model</a>
+        <a href="/svm_model">SVM Model</a>
+        <a href="/Predict_disease">Predict Heart Disease</a>
+    </nav>
+
+    <main>
+        <section class="main-one">
+            <h2>Project Details</h2>
+            <p>This project aims to predict heart disease using machine learning algorithms, specifically Support Vector Machines (SVM) and Multi-Layer Perceptron (MLP) neural networks. The project explores the performance of SVM with different kernels and MLP with various activation functions, highlighting their strengths in capturing both linear and non-linear patterns in the data.</p>
+
+            <table>
+                <tr>
+                    <th>Variable Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Age (Feature)</td>
+                    <td>Integer</td>
+                    <td>Age of the individual</td>
+                </tr>
+                <tr>
+                    <td>Sex (Feature)</td>
+                    <td>Categorical</td>
+                    <td>Gender of the individual</td>
+                </tr>
+                <tr>
+                    <td>CP</td>
+                    <td>Categorical</td>
+                    <td>Chest pain type</td>
+                </tr>
+                <tr>
+                    <td>Trestbps (Feature)</td>
+                    <td>Integer</td>
+                    <td>Resting blood pressure (on admission to the hospital)</td>
+                </tr>
+                <tr>
+                    <td>Chol (Feature)</td>
+                    <td>Integer</td>
+                    <td>Serum cholesterol</td>
+                </tr>
+                <tr>
+                    <td>Fbs (Feature)</td>
+                    <td>Categorical</td>
+                    <td>Fasting blood sugar > 120 mg/dL</td>
+                </tr>
+                <tr>
+                    <td>Restecg (Feature)</td>
+                    <td>Categorical</td>
+                    <td>Resting electrocardiographic results</td>
+                </tr>
+                <tr>
+                    <td>Thalach (Feature)</td>
+                    <td>Integer</td>
+                    <td>Maximum heart rate achieved</td>
+                </tr>
+                <tr>
+                    <td>Exang (Feature)</td>
+                    <td>Categorical</td>
+                    <td>Exercise-induced angina</td>
+                </tr>
+                <tr>
+                    <td>Oldpeak (Feature)</td>
+                    <td>Integer</td>
+                    <td>ST depression induced by exercise relative to rest</td>
+                </tr>
+                <tr>
+                    <td>Slope (Feature)</td>
+                    <td>Categorical</td>
+                    <td>Slope of the peak exercise ST segment</td>
+                </tr>
+                <tr>
+                    <td>Ca (Feature)</td>
+                    <td>Integer</td>
+                    <td>Number of major vessels (0-3) colored by fluoroscopy</td>
+                </tr>
+                <tr>
+                    <td>Thal (Feature)</td>
+                    <td>Categorical</td>
+                    <td>Thalassemia</td>
+                </tr>
+                <tr>
+                    <td>Num (Target)</td>
+                    <td>Integer</td>
+                    <td>Diagnosis of heart disease</td>
+                </tr>
+            </table>
+
+        </section>
+        <section>
+            <h2>Model Life Cycle</h2>
+
+            <ul>
+                <li>Import Libraries</li>
+                <li>Data loading</li>
+                <li>Data Exploration</li>
+                <li>Data Preparation</li>
+                <li>Data Normalization</li>
+                <li>Data Modeling</li>
+                <li>Model Evaluation</li>
+            </ul>
+
+        </section>
+    </main>
+</body>
+</html>
