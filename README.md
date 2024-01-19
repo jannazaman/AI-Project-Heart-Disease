@@ -42,6 +42,8 @@ Below are the details and descriptions of the data features.
 3. Run the Project:
    - PyCharm &rarr; Click the green "Run" button
    - Visual Studio Code &rarr; ``` bash python -m flask run ```
+4. Access the App:
+Once the application is running, you can access it in your web browser at the specified address (http://127.0.0.1:5000/).
 
 ## Model Application 
 ### Home Page
