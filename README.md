@@ -47,13 +47,13 @@ Once the application is running, you can access it in your web browser at the sp
 
 ## Model Application 
 ### Home Page
-![homepage](images/HomePage.png)
+![home page](images/HomePage.png)
 ### MLP Details Page
-![mlp](images/MLP_page.png)
+![mlp page](images/MLP_page.png)
 ### SVM Details Page
-![svm](images/SVM_page.png)
+![svm page](images/SVM_page.png)
 ### Heart Disease Prediction Page
-![formpage](images/Form_Page.png)
+![form page](images/Form_Page.png)
 
 ## Project Files
 - venv/
