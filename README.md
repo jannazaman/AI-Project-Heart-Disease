@@ -30,6 +30,11 @@ To train and test the models, the following libraries and tools were utilized:
 * numpy &#8594; for numerical operations
 * scikit-learn &#8594; popular machine learning library that provides simple and efficient tools for data analysis, modeling, splitting
 
+## Technologies Used
+- Python
+  - Flask Framework 
+- HTML/CSS
+
 ## Usage Instructions
 1. Clone the Repository:
    ```bash
