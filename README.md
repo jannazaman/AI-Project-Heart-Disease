@@ -63,6 +63,7 @@ Once the application is running, you can access it in your web browser at the sp
 ## Project Files
 - venv/
   - *app.py:* Main Application File
+  - *test.py:* Unit Testing
   - templates/
     - *index.html:* Home Page
     - *mlp_model.html:* MLP model details page
@@ -76,6 +77,9 @@ Once the application is running, you can access it in your web browser at the sp
 - *MLP.ipynb:* Jupyter Notebook file for MLP model implementation
 - *SVM.ipynb:* Jupyter Notebook file for SVM model implementation
 - *Report - MLP & SVM.pdf:* Detailed report on MLP and SVM models
+
+## Unit Test
+I incorporated unit testing to validate the functionality of the heart disease prediction feature, specifically focusing on the /Predict_disease route. The test ensures that the route responds with the expected HTTP status code (200) and generates the correct content in the response. 
 
 ## Model Evaluation and Insights
 ### Superior Performance of MLP with "tanh" Activation: 
