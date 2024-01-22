@@ -67,7 +67,7 @@ Once the application is running, you can access it in your web browser at the sp
     - *Predict_disease.html:* Heart disease prediction page
     - *mlp_predict.pkl:* Pickle file for MLP prediction (best model)
 - *requirements.txt:* File specifying project dependencies
-- *images/:* Folder containing Project Application Images
+- images/: Folder containing Project Application Images
 - *MLP.ipynb:* Jupyter Notebook file for MLP model implementation
 - *SVM.ipynb:* Jupyter Notebook file for SVM model implementation
 - *Report - MLP & SVM.pdf:* Detailed report on MLP and SVM models
