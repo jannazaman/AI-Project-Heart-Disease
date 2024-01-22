@@ -4,8 +4,7 @@
 This project aims to predict heart disease using machine learning algorithms, specifically Support Vector Machines (SVM) and Multi-Layer Perceptron (MLP) neural networks. The project explores the performance of SVM with different kernels and MLP with various activation functions, highlighting their strengths in capturing both linear and non-linear patterns in the data.
 
 ## Features
-Below are the details and descriptions of the data features.
-- 13 Features and 1 Target
+The dataset comprises 13 features and 1 target variable. Below are the details and descriptions of each feature:
 
 | Variable Name   | Type         | Description                                       |
 |-----------|--------------|---------------------------------------------------------|
@@ -24,36 +23,61 @@ Below are the details and descriptions of the data features.
 | Thal      | Categorical  | Thalassemia                                             |
 | Num       | Integer      | Diagnosis of heart disease  (TARGET)                    |
 
-## Model Selection Insights
-### MLP:
-- Activation Functions -
-  1. ReLU (Rectified Linear Unit): Non-linear activation function, outputting input for positive values, zero otherwise.
-  2. Tanh (Hyperbolic Tangent): Outputs values in the range [-1, 1], capturing non-linear relationships.
- 
-- Optimizers -
-  1. Stochastic Gradient Descent (SGD): Iterative algorithm to minimize the model's error by adjusting parameters. Effective for large datasets.
-  2. Adam Optimizer: Adaptive learning rate algorithm for training neural networks, effective in handling noisy data.
-     
-- Learning Rates-
-  1. [0.01, 0.001]: How big the steps are when the model learns. Higher learning rates can speed up training but might cause the model to surpass the optimal values. Lower rates ensures stability but may slow down training.
-
-### SVM:
-- Kernels -
-  1. Linear Kernel: A simple kernel that creates linear decision boundaries, works well for linearly separable data.
-  2. RBF (Radial Basis Function) Kernel: A versatile kernel that can handle non-linear decision boundaries, suitable for a wide range of data distributions.
-  3. Sigmoid Kernel: Non-linear kernel function that is particularly useful for binary classification tasks.
-
-## What To Import
-* import random &#8594; for generating random numbers
-* import pandas &#8594; for data manipulation and analysis
-* import numpy &#8594; for numerical operations
+## Implementation Details
+To train and test the models, the following libraries and tools were utilized:
+* random &#8594; for generating random numbers
+* pandas &#8594; for data manipulation and analysis
+* numpy &#8594; for numerical operations
 * scikit-learn &#8594; popular machine learning library that provides simple and efficient tools for data analysis, modeling, splitting
 
+## Technologies Used
+- Python
+  - Flask Framework 
+- HTML/CSS
+
+## Usage Instructions
+1. Clone the Repository:
+   ```bash
+   git clone https://github.com/jannazaman/AI-Project-Heart-Disease.git
+   ```
+2. Install Requirements:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the Project:
+   - PyCharm &rarr; Click the green "Run" button
+   - Visual Studio Code &rarr; ``` bash python -m flask run ```
+4. Access the App:
+Once the application is running, you can access it in your web browser at the specified address (http://127.0.0.1:5000/).
+
 ## Model Application 
+### Home Page
+![home page](images/HomePage.png)
+### MLP Details Page
+![mlp page](images/MLP_page.png)
+### SVM Details Page
+![svm page](images/SVM_page.png)
+### Heart Disease Prediction Page
+![form page](images/Form_Page.png)
 
+## Project Files
+- venv/
+  - *app.py:* Main Application File
+  - templates/
+    - *index.html:* Home Page
+    - *mlp_model.html:* MLP model details page
+    - *svm_model.html:* SVM model details page
+    - *SVM.html:* SVM implementation notebook
+    - *MLP.html:* MLP implementation notebook
+    - *Predict_disease.html:* Heart disease prediction page
+    - *mlp_predict.pkl:* Pickle file for MLP prediction (best model)
+- *requirements.txt:* File specifying project dependencies
+- images/: Folder containing Project Application Images
+- *MLP.ipynb:* Jupyter Notebook file for MLP model implementation
+- *SVM.ipynb:* Jupyter Notebook file for SVM model implementation
+- *Report - MLP & SVM.pdf:* Detailed report on MLP and SVM models
 
-
-## Results 
+## Model Evaluation and Insights
 ### Superior Performance of MLP with "tanh" Activation: 
 Based on experiment outcomes, the MLP model with the "tanh" activation function outperformed both linear and non-linear SVM models, achieving the highest accuracy of 0.885. This indicates that the MLP model is a better fit for this dataset and its ability to simulate non-linear correlations contributes to capturing complex data patterns effectively.
    
